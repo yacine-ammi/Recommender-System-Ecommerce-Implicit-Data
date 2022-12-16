@@ -57,7 +57,16 @@
 <p> The Event types are
 <li><code>view</code> - a user viewed a product</li>
 <li><code>cart</code> - a user added a product to shopping cart</li>
-<li><code>purchase</code> - a user purchased a product</li><p>
+<li><code>purchase</code> - a user purchased a product</li></p>
  
 <p>The approximate size of the dataset is <b>15GB</b>, it is hosted in Kaggle as "eCommerce behavior data from multi category store" and it can be accessed from <a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store" target="_blank" rel="noopener noreferrer">here!</a>.<p>
 
+## Methodology
+<p>Due to the huge size of data, and limited amount of available resources of the kaggle kernels (16GB of RAM), the conventional methodes of reading, manipulating and anlysing data (mainly with Pandas DataFrame) could not be used in the preprocessing stage due to the folowing reasons:
+<li>Pandas provides data structures for in-memory analytics. which makes using pandas to analyze datasets that are larger than memory datasets somewhat tricky.</li>
+<li>Even datasets which are a sizable fraction of memory become unwieldy, as some pandas operations need to make intermediate copies.</li>
+<li>Pandas lacks multiprocessing of tasks which makes complex tasks time consuming.</li></p>
+ 
+To overcome these problems, other pwerfull libraries simillar to pandas were used in the first stages of this study (mainly preprocessing), we uesed the following libraries :
+* **dask_cudf** : to load multiple files in parallel at the same time, and preprocess them without loading them to GPU memory.
+* **cudf** : which is simillar to pandas, but it uses GPU memory and processor to speed up to calculations.
