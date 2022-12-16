@@ -59,5 +59,5 @@
 <li><code>cart</code> - a user added a product to shopping cart</li>
 <li><code>purchase</code> - a user purchased a product</li><p>
  
-<p>The approximate size of the dataset is <b>15GB<b>, it is hosted in Kaggle as "eCommerce behavior data from multi category store" and it can be accessed from <a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store" target="_blank" rel="noopener noreferrer">here!</a>.<p>
+<p>The approximate size of the dataset is <b>15GB</b>, it is hosted in Kaggle as "eCommerce behavior data from multi category store" and it can be accessed from <a href="https://www.kaggle.com/datasets/mkechinov/ecommerce-behavior-data-from-multi-category-store" target="_blank" rel="noopener noreferrer">here!</a>.<p>
 
