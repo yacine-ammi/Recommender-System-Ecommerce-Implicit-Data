@@ -1,4 +1,4 @@
-# Ecommerce-Recommender-System
+# Recommender System for Implicit Ecommerce Data
 ## Purpos of the study:
 <p>
   The purpose of this project is to build a recommender system using implicit data from a multi category ecommerce store.<br>
